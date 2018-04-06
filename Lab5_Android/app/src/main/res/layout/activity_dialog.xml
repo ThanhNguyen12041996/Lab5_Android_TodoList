@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:orientation="vertical"
+        tools:context="com.example.minhthanh.lab5_android.MainActivity"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:ems="10"
+            android:foregroundTint="@android:color/holo_red_light"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="14dp"
+            android:text="Due to"
+            />
+
+        <DatePicker
+            android:id="@+id/dialog_date_datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:spinnersShown="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/dialog_date_datePicker"
+            android:layout_marginTop="14dp"
+            android:text="Priority"
+            />
+
+        <RadioGroup
+            android:id="@+id/toDoRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:checkedButton="@+id/normal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/high"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_red_light"
+                android:gravity="center"
+                android:text="High" />
+
+            <RadioButton
+                android:id="@+id/normal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:buttonTint="@android:color/holo_red_light"
+                android:gravity="center"
+                android:text="Normal" />
+
+            <RadioButton
+                android:id="@+id/low"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_red_light"
+                android:gravity="center"
+                android:text="Low" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/button1"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="22dp"
+            android:layout_alignTop="@+id/button2" />
+
+        <TextView
+            android:id="@+id/button2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toDoRG"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/editText"
+            android:text="Save" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
